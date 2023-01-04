@@ -1,0 +1,131 @@
+#body {
+    margin: 0px;
+    background-color: #18191A;
+    overflow-y: scroll;
+}
+
+/*1*/
+.wrapper-title {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    width: auto;
+    padding: 0px 15px 0px 15px;
+    background-color: #26282b;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+/**/
+.wrapper-title-left {
+    flex: 2;
+    display: flex;
+    align-self: center;
+}
+
+.wrapper-title-left-image {
+    cursor: pointer;
+}
+
+.image-left {
+    width: 40px;
+    height: 40px;
+}
+
+.type {
+    align-self: center;
+    margin: 0px 0px 0px 10px;
+    background-color: #3E4042;
+    padding: 7px 25px 7px 15px;
+    border-radius: 20px;
+    color: #707172;
+    font-size: 15px;
+}
+
+.search {
+    border: none;
+    background-color: #3E4042;
+    color: white;
+}
+
+.search:hover {
+    border: none;
+}
+
+/**/
+.wrapper-title-center {
+    flex: 3;
+    display: flex;
+    align-self: center;
+    color: white;
+    justify-content: center;
+}
+
+.wrapper-title-center-icon {
+    font-size: 24px;
+    padding: 5px 40px 5px 40px;
+    border-radius: 8px;
+    margin: 0px 5px 0px 5px;
+    transition: 0.3s;
+    color: #a7a7a7;
+    cursor: pointer;
+}
+
+.wrapper-title-center-icon:hover {
+    background-color: #3E4042;
+    transition: 0.2s;
+}
+
+.bi-house-fill {
+    font-size: 24px;
+    padding: 5px 40px 5px 40px;
+    margin: 0px 5px 0px 5px;
+    color: #a7a7a7;
+    color: #2374E1;
+    border-bottom: 3px solid #2374E1;
+    cursor: pointer;
+}
+
+/**/
+.wrapper-title-right {
+    flex: 2;
+    display: flex;
+    align-self: center;
+    color: white;
+    justify-content: end;
+}
+
+.wrapper-title-right-icon {
+    font-size: 17px;
+    align-self: center;
+    background-color: #3E4042;
+    color: white;
+    border-radius: 10px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.wrapper-title-right-image {
+    margin: 0px 0px 0px 5px;
+    cursor: pointer;
+}
+
+.image-right {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn {}
+
+.btn-group {
+    border-radius: 50px;
+    background-color: #3b3b3b;
+    margin: 0px 3px 0px 3px;
+}
+
+.dropdown-menu {
+    width:343px;
+    position: relative;
+}
+
+/**/
