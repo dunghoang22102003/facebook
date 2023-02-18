@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dũng Hoàng | Facebook</title>
+    <link rel="stylesheet" href="assets/css/profile.css">
+    <link rel="icon" href="assets/image/logo-facebook.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body id="body">
+    <div class="wrapper-title">
+        <div class="wrapper-title-left">
+            <div class="wrapper-title-left-image">
+                <img src="assets/image/logo-facebook.png" alt="No image" class="image-left">
+            </div>
+            <div class="type">
+                <i class="bi bi-search"></i>
+                <input type="text" class="search" placeholder="Tìm kiếm trên facebook" value="">
+            </div>
+        </div>
+        <div class="wrapper-title-center">
+            <i class="bi bi-house-fill " onclick="click(1)"></i>
+            <i class="bi bi-play-btn wrapper-title-center-icon" onclick="click(2)"></i>
+            <i class="bi bi-shop-window wrapper-title-center-icon" onclick="click(3)"></i>
+            <i class="bi bi-person-circle wrapper-title-center-icon" onclick="click(4)"></i>
+            <i class="bi bi-columns wrapper-title-center-icon" onclick="click(5)"></i>
+        </div>
+        <div class="wrapper-title-right">
+            <div class="btn-group">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown"><i
+                        class="bi bi-grid-3x3-gap-fill wrapper-title-right-icon"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-1">
+                    <div class="title-dropdown-item">Menu</div>
+                    <div class="all">
+                        <div class="all-in-left">
+                            <div class="type-1">
+                                <i class="bi bi-search"></i>
+                                <input type="text" class="search-1" placeholder="Tìm kiếm trên menu" value="">
+                            </div>
+                            <div class="write-title" style="color:white; margin: 15px 0px 10px 10px; font-weight: 600;">
+                                Xã hội</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/1.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Sự kiện</div>
+                                        <div class="write-2">Tổ chức hoặc tìm sự kiện cùng những hoạt động khác trên
+                                            mạng và
+                                            ở quanh đây.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/2.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Bạn </div>
+                                        <div class="write-2">Tìm kiếm bạn bè hoặc những người bạn có thể biết.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/3.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Nhóm</div>
+                                        <div class="write-2">Kết nối với những người cùng chung sở thích.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/4.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Bảng tin</div>
+                                        <div class="write-2">Xem bài viết phù hợp của những người và Trang bạn theo dõi.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/5.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Yêu thích</div>
+                                        <div class="write-2">View posts by Favorites</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/6.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Gần đây nhất</div>
+                                        <div class="write-2">Xem bài viết gần đây nhất từ bạn bè, nhóm, Trang và hơn thế
+                                            nữa.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/7.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Trang</div>
+                                        <div class="write-2">Khám phá và kết nối với các doanh nghiệp trên Facebook.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Giải trí</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/8.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Video chơi game</div>
+                                        <div class="write-2">Xem, kết nối với những game và người phát trực tiếp mà bạn
+                                            yêu thích.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/10.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Chơi game</div>
+                                        <div class="write-2">Chơi game bạn yêu thích.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/11.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Watch</div>
+                                        <div class="write-2">Đích đến của video phù hợp với sở thích và quan hệ kết nối
+                                            của bạn.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/12.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Video trực tiếp</div>
+                                        <div class="write-2">Xem video trực tiếp phổ biến từ khắp thế giới</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Mua sắm</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/13.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Facebook Pay</div>
+                                        <div class="write-2">Một cách dễ dàng, bảo mật để thanh toán trên các ứng dụng
+                                            bạn đang dùng.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/14.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Marketplace</div>
+                                        <div class="write-2">Mua bán trong cộng đồng của bạn.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Cá nhân</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/15.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Hoạt động quảng cáo gần đây</div>
+                                        <div class="write-2">Xem toàn bộ quảng cáo mà bạn đã tương tác trên Facebook.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/16.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Kỷ niệm</div>
+                                        <div class="write-2">Lướt xem ảnh, video và bài viết cũ của bạn trên Facebook.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/17.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Đã lưu</div>
+                                        <div class="write-2">Tìm bài viết, ảnh và video mà bạn đã lưu để xem sau.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Chuyên nghiệp</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/18.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Trình quản lý quảng cáo</div>
+                                        <div class="write-2">Tạo, quản lý và theo dõi hiệu quả quảng cáo.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Nguồn lực cho cộng đồng</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/19.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Hiến máu</div>
+                                        <div class="write-2">Cập nhật thông tin về hoạt động hiến máu ở gần bạn.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/20.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Trung tâm khoa học khí hậu</div>
+                                        <div class="write-2">Tìm hiểu về vấn đề biến đổi khí hậu và tác động của hiện
+                                            tượng này.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/21.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Ứng phó khẩn cấp</div>
+                                        <div class="write-2">Tìm thông tin mới nhất về các cuộc khủng hoảng đang diễn ra
+                                            trên thế giới.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/22.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Sức khỏe cảm xúc</div>
+                                        <!-- <div class="write-2">Xem video trực tiếp phổ biến từ khắp thế giới</div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/23.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Chiến dịch gây quỹ</div>
+                                        <div class="write-2">Quyên góp và gây quỹ cho tổ chức phi lợi nhuận và mục đích
+                                            cá nhân.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="write-title"
+                                style="color:white; padding: 15px 0px 0px 0px; margin: 15px 0px 10px 10px; font-weight: 600; border-top: 1px solid #3E4042;">
+                                Sản phẩm khác của meta</div>
+                            <div class="dropdown-item-left">
+                                <div class="dropdown-item-left-content">
+                                    <div class="dropdown-item-left-content-image"><img src="assets/image/icon/24.png"
+                                            alt="no image" class="image-3"></div>
+                                    <div class="dropdown-item-left-content-write">
+                                        <div class="write-1">Messenger nhí</div>
+                                        <div class="write-2">Cho phép bé nhắn tin với bạn thân và gia đình.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all-in-right">
+                            <div class="all-in-right-content-wrapper">
+                                <div class="all-in-right-content-write-title">Tạo</div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-file-earmark-post all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Đăng</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-camera-video-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Tin</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-book-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Phòng họp mặt</div>
+                                </div>
+                                <div class="all-in-right-line"
+                                    style="color:white; padding: 0px 0px 0px 0px; margin: 15px 0px 10px 10px; border-top: 1px solid #3E4042;">
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-flag-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Trang</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-megaphone-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Quảng cáo</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-person-circle all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Nhóm</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-calendar2-event-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Sự kiện</div>
+                                </div>
+                                <div class="all-in-right-content">
+                                    <i class="bi bi-handbag-fill all-in-right-content-icon"></i>
+                                    <div class="all-in-right-content-write">Bài trên Marketplace</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown"><i
+                        class="bi bi-messenger wrapper-title-right-icon"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-2">
+                    <div class="dropdown-menu-item-2-title">
+                        <div class="dropdown-menu-item-2-title-left">Chat</div>
+                        <div class="dropdown-menu-item-2-title-right">
+                            <i class="bi bi-three-dots dropdown-menu-item-2-title-right-icon"></i>
+                            <i class="bi bi-arrows-fullscreen dropdown-menu-item-2-title-right-icon"></i>
+                            <i class="bi bi-camera-video-fill dropdown-menu-item-2-title-right-icon"></i>
+                            <i class="bi bi-file-earmark-post dropdown-menu-item-2-title-right-icon"></i>
+                        </div>
+                    </div>
+                    <div class="type-3">
+                        <i class="bi bi-search"></i>
+                        <input type="text" class="search-3" placeholder="Tìm kiếm trên messenger" value="">
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-menu-item-2-content">
+                        <div class="dropdown-menu-item-2-content-left">
+                            <img src="assets/image/avatar.png" alt="No imgae" class="image-4">
+                        </div>
+                        <div class="dropdown-menu-item-2-content-center">
+                            <div class="dropdown-menu-item-2-content-center-top">Chó mũi đỏ</div>
+                            <div class="dropdown-menu-item-2-content-center-bottom">chó mũi đỏ đã gửi một tin...</div>
+                        </div>
+                        <div class="dropdown-menu-item-2-content-right">
+                            <i class="bi bi-check-circle-fill dropdown-menu-item-2-content-right-icon"></i>
+                            <!-- <div class="dropdown-menu-item-2-content-right-write">17 phút</div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="wrapper-title-right-dropdown btn" data-toggle="dropdown"><i
+                        class="bi bi-bell-fill wrapper-title-right-icon"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-item-3">
+                    <a class="dropdown-item dropdown-link" href="#">Action</a>
+                    <a class="dropdown-item dropdown-link" href="#">Another action</a>
+                    <a class="dropdown-item dropdown-link" href="#">Something else here</a>
+                    <a class="dropdown-item dropdown-link" href="#">Separated link</a>
+                </div>
+            </div>
+            <div class="wrapper-title-right-image">
+                <a href="profile.html" class="link-profile"><img src="assets/image/profile.jpg" alt="No image"
+                        class="image-right"></a>
+            </div>
+        </div>
+    </div>
+    <div class="all-profile">
+        <div class="picture-poster">
+            <img src="assets/image/profile-1.jpg" alt="error" class="picture-content-image">
+        </div>
+        <div class="all-information">
+            <div class="information-avatar">
+                <div class="avatar-profile">
+                    <div class="avatar"><img src="assets/image/image-avatar.png" alt="" class="image-avatar"></div>
+                </div>
+                <div class="information-name">
+                    <div class="name-profile">XIMER DEV</div>
+                    <div class="friend-profile">1K Bạn bè</div>
+                    <div class="picture-friend-profile">
+                        <img src="assets/image/avatar.png" alt="error" class="picture-friend-profile-image">
+                        <img src="assets/image/avatar.png" alt="error" class="picture-friend-profile-image">
+                        <img src="assets/image/avatar.png" alt="error" class="picture-friend-profile-image">
+                        <img src="assets/image/avatar.png" alt="error" class="picture-friend-profile-image">
+                        <img src="assets/image/avatar.png" alt="error" class="picture-friend-profile-image">
+                        <img src="assets/image/avatar.png" alt="error" class="picture-friend-profile-image">
+                    </div>
+                </div>
+                <div class="post-fix">
+                    <div class="post">
+                        <i class="bi bi-plus-circle-fill bi-plus-circle-fill-post"></i>
+                        <div class="write">Thêm vào tin</div>
+                    </div>
+                    <div class="fix">
+                        <i class="bi bi-pencil-fill bi-pencil-fill-fix"></i>
+                        <div class="write">Chỉnh sửa trang cá nhân</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/profile.js"></script>
+</body>
+
+</html>
